@@ -1,0 +1,1 @@
+INSERT INTO `dede_addonarticle17` VALUES('34','119','<img alt=\"\" src=\"/uploads/allimg/140326/1-140326111J2L7.jpg\" style=\"width: 720px; height: 280px;\" />','','','127.0.0.20','','','027-83765896','83765896','武汉宝丰一路','市区71路,411路');

@@ -1,0 +1,1 @@
+<li><a title="[field:text/]"  href="[field:imgsrc/]"><img width="60" src="[field:imgsrc/]" longdesc="[field:imgsrc/]" alt="[field:text/]" title="[field:text/]"></a></li>

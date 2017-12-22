@@ -1,0 +1,1 @@
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img class="lazyimg" src="/templets/yan/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></li>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script>
+</head>
+
+<body>
+
+<!--Header:Start--> 
+
+<!--头部开始--> 
+{dede:include filename="head2.htm"/} 
+<script type="text/javascript">
+
+muneCur2();
+
+initCommonHeader();
+
+var MARK = "product";
+
+if (MARK == "") { MARK = "index"; } else if (MARK != "index") { muneCur2(); }
+
+</script> 
+
+<!--Header:End--> 
+
+<!--Content:Start-->
+
+<div class="content">
+<div class="topadcs"> <a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}"><img src="{dede:global.cfg_templets_skin/}/images/20140625141432_81297.jpg" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" /></a> </div>
+<div class="rightl">
+<div class="righttop"> </div>
+<div class="plc"> <span>{dede:field name='position'/}</span> </div>
+<div class="rightbot"> </div>
+
+<!--下级分类-->
+
+<!--下级分类-->
+
+<div class="righttop"> </div>
+<div class="pro_main"> 
+{dede:list pagesize='12'  titlelen='30'}
+<dl class="pd_list_dl">
+<dt><a target="_blank" href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]" alt="[field:title/]"title="[field:title/]" /></a></dt>
+<dd><a target="_blank" class="red" href="[field:arcurl/]" title="[field:title/]">[field:title/]...</a></dd>
+</dl>
+{/dede:list}
+<div class="clear"> </div>
+
+<div class="fenye">
+<ol>
+{dede:pagelist listitem="info,index,end,pre,next,pageno,option"listsize=""/}
+</ol>
+</div>
+
+<!--OranPager:end--> 
+
+</div>
+<div class="rightbot"> </div>
+
+</div>
+{dede:include filename="left.htm"/}
+<div class="clear"> </div>
+<div id="mailArticle"> </div>
+</div>
+
+<!--Content:End--> 
+
+<!--Footer:Start--> 
+
+{dede:include filename="footer.htm"/}
+</body>
+</html>

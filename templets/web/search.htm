@@ -1,0 +1,129 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script></head>
+
+<body>
+
+<!--Header:Start-->
+
+
+
+<!--头部开始-->
+{dede:include filename="head2.htm"/}
+
+
+<!--Header:End-->
+
+<!--Content:Start-->
+
+<div class="content">
+
+<div class="topadcs">
+
+<a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}"><img src="{dede:global.cfg_templets_skin/}/images/20140625141432_81297.jpg" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" /></a>
+
+</div>
+
+
+
+<div class="rightl">
+
+<div class="righttop">
+
+</div>
+
+
+
+<div class="plc">
+<span>搜索 <strong class="fc_03c">{dede:global name='keyword' function='RemoveXSS(@me)'/}</strong> 的结果</span>
+
+</div>
+
+
+<div class="rightbot">
+
+</div>
+
+<div class="righttop">
+
+</div>
+
+<div class="right_main">
+
+<div class="news_con">
+
+{dede:list pagesize='10'  titlelen='60'}
+
+<dl class="news_dl">
+<dt><a href="[field:arcurl/]" target="_blank"
+title="[field:title/]" class="dt_1">
+[field:title/]</a><span class="dt_2">[
+[field:pubdate function="MyDate('Y-m-d',@me)"/]
+]</span></dt>
+<dd>[field:description function="cn_substr(@me,200)"/]...
+</dd>
+</dl>
+
+{/dede:list}
+
+
+</div>
+
+<div class="fenye">
+<ol>
+{dede:pagelist listitem="info,index,end,pre,next,pageno"listsize=""/}
+</ol>
+</div>
+
+
+</div>
+
+<div class="rightbot">
+
+</div>
+
+
+</div>
+
+{dede:include filename="left1.htm"/}
+<div class="clear">
+
+</div>
+
+</div>
+
+<!--Content:End-->
+
+<!--Footer:Start-->
+
+
+
+{dede:include filename="footer.htm"/}
+
+
+
+
+<!--Footer:End-->
+
+</body>
+
+</html>
+

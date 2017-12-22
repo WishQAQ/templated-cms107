@@ -1,0 +1,961 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="author" content="design by www.xunmoban.com" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_Index.js"></script>
+</head>
+
+<body>
+
+<!--头部开始--> 
+
+<!--头部开始--> 
+
+{dede:include filename="head.htm"/}
+<div id="flashs"> {dede:arclist titlelen='30' typeid='11'  row='5' addfields='lj' channelid='1' limit='0,1'}
+<div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:lj/]')"
+
+class="bgitem" id="flashbg0" style="background: url('[field:litpic/]') no-repeat scroll center top;
+
+height: 562px; cursor:pointer; width: 100%;
+
+margin: 0 auto;"> </div>
+{/dede:arclist}
+
+
+
+{dede:arclist titlelen='30' typeid='11'  row='5' addfields='lj' channelid='1' limit='1,1'}
+<div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:lj/]')"
+
+class="bgitem" id="flashbg1" style="background: url('[field:litpic/]') no-repeat scroll center top;
+
+height: 562px; cursor:pointer; width: 100%;
+
+margin: 0 auto;"> </div>
+{/dede:arclist}
+
+{dede:arclist titlelen='30' typeid='11'  row='5' addfields='lj' channelid='1' limit='2,1'}
+<div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:lj/]')"
+
+class="bgitem" id="flashbg2" style="background: url('[field:litpic/]') no-repeat scroll center top;
+
+height: 562px; cursor:pointer; width: 100%;
+
+margin: 0 auto;"> </div>
+{/dede:arclist}
+
+{dede:arclist titlelen='30' typeid='11'  row='5' addfields='lj' channelid='1' limit='3,1'}
+<div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:lj/]')"
+
+class="bgitem" id="flashbg3" style="background: url('[field:litpic/]') no-repeat scroll center top;
+
+height: 562px; cursor:pointer; width: 100%;
+
+margin: 0 auto;"> </div>
+{/dede:arclist}
+
+{dede:arclist titlelen='30' typeid='11'  row='5' addfields='lj' channelid='1' limit='4,1'}
+<div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:lj/]')"
+
+class="bgitem" id="flashbg4" style="background: url('[field:litpic/]') no-repeat scroll center top;
+
+height: 562px; cursor:pointer; width: 100%;
+
+margin: 0 auto;"> </div>
+{/dede:arclist} </div>
+<div class="contant">
+<div class="h-ser clearfix">
+<div class="ser-con">
+<div class="s-inp fl">
+<form action="/plus/search.php" name="formsearch">
+<input type="hidden" name="kwtype" value="0" />
+<input type="text"  name="keyword" id="seachkeywords" class="inp01" />
+<input type="image" 
+
+src="/templets/web/images/s_ss.gif" />
+</form>
+</div>
+<p> <b>您是否还在搜索：</b>{dede:channelartlist typeid='15'}<a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}">{dede:field name='typename'/}</a>|{/dede:channelartlist} </p>
+</div>
+</div>
+</div>
+
+<!--主内容开始-->
+
+<div class="contant"> 
+
+<!--合作客户-->
+
+<div class="hb">
+<h3> <a href="/zzry/hzkh/" title="合作客户" target="_blank">合作客户</a><span>Brigitte jiang cooperation customers</span></h3>
+<div class="list-con clearfix">
+<div id="Left_ding1" class="list-con-a"> <img src="{dede:global.cfg_templets_skin/}/images/left01.gif" alt="上一页" title="上一页" /></div>
+<ul id="ISL_Cont_1d1" class="list-con-b clearfix">
+{dede:arclist typeid='12' titlelen='30' row='20' }
+<li><a href="[field:arcurl/]" title="[field:title/]"
+
+target="_blank"> <img class="lazyimg" src="[field:litpic/]"
+
+alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]"
+
+title="[field:title/]" target="_blank">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+<div id="Right_ding1" class="list-con-c"> <img src="{dede:global.cfg_templets_skin/}/images/right01.gif" alt="下一页" title="下一页" /></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+
+var scrollPic_01 = new ScrollPicleft();
+
+scrollPic_01.scrollContId = "ISL_Cont_1d1"; // 内容容器ID""
+
+scrollPic_01.arrLeftId = "Left_ding1"; //左箭头ID
+
+scrollPic_01.arrRightId = "Right_ding1"; //右箭头ID
+
+scrollPic_01.frameWidth = 910; //显示框宽度
+
+scrollPic_01.pageWidth = 910; //翻页宽度
+
+scrollPic_01.speed = 10; //移动速度(单位毫秒，越小越快)
+
+scrollPic_01.space = 10; //每次移动像素(单位px，越大越快)
+
+scrollPic_01.autoPlay = true; //自动播放
+
+scrollPic_01.autoPlayTime = 3; //自动播放间隔时间(秒)
+
+scrollPic_01.initialize(); //初始化                                       
+
+</script> 
+
+<!--合作客户-->
+
+<div class="cp clearfix"> 
+
+<!--产品分类-->
+
+<div class="cp-l">
+<h2> <a href="JavaScript:;" title="产品分类" target="_blank"> 产品分类</a><span>Classification</span></h2>
+<div class="cp-con">
+<h3>{dede:type typeid='55'}<a href="[field:typelink/]" >按材质分类</a>{/dede:type}</h3>
+<div>
+{dede:channel typeid='55'}
+<h4 class='erji'><a class="ershow" title='[field:typename/]' href="[field:typelink/]" >[field:typename/]</a></h4>
+{/dede:channel}
+</div>
+<h3>{dede:type typeid='13'}<a href="[field:typelink/]" >按类型分类</a>{/dede:type}</h3>
+<div>
+{dede:channel typeid='13'}
+<h4 class='erji'><a class="ershow" title='[field:typename/]' href="[field:typelink/]" >[field:typename/]</a></h4>
+{/dede:channel}
+</div>
+<h3>{dede:type typeid='15'}<a href="[field:typelink/]" >按单位性质分类</a>{/dede:type}</h3>
+<div>
+{dede:channel typeid='15'}
+<h4 class='erji'><a class="ershow" title='[field:typename/]' href="[field:typelink/]" >[field:typename/]</a></h4>
+{/dede:channel}
+</div>
+
+</div>
+</div>
+<script type="text/javascript">
+
+$(".sj").hide();
+
+$(".erji").hover(function () {
+
+$(this).next(".sj").toggle(200).siblings(".sj").hide(200);
+
+}).css("cursor", "pointer");
+
+</script> 
+
+<!--产品分类--> 
+
+<!--领导办公家具$$董事长办公家具$$总经理办公家具$$职员办公家具-->
+
+<div class="cp-r">
+<h3 class="clearfix cp_top"> 
+<em> 
+{dede:type typeid='1'} <a sid="0" href="[field:typelink/]" title="[field:typename/]" target="_blank"  class="cur">[field:typename/]</a>|
+
+{/dede:type}
+{dede:type typeid='2'} <a sid="1" href="[field:typelink/]" title="[field:typename/]" target="_blank" >[field:typename/]</a>|
+{/dede:type}
+
+
+{dede:type typeid='3'} <a sid="2" href="[field:typelink/]" title="[field:typename/]" target="_blank" >[field:typename/]</a>|
+{/dede:type}
+
+{dede:type typeid='4'} <a sid="3" href="[field:typelink/]" title="[field:typename/]" target="_blank" >[field:typename/]</a>|
+{/dede:type} </em>
+
+<b><a href="/zw/" title="more" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/more.gif" alt="more" title="more" /></a></b> </h3>
+<div sid="0" class="cp_con">
+<ul class="clearfix">
+{dede:arclist typeid='1' titlelen='30' row='6' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank"
+
+class="red">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</div>
+<div sid="1" class="cp_con">
+<ul class="clearfix">
+{dede:arclist typeid='2' titlelen='30' row='6' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank"
+
+class="red">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</div>
+<div sid="2" class="cp_con">
+<ul class="clearfix">
+{dede:arclist typeid='3' titlelen='30' row='6' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank"
+
+class="red">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</div>
+<div sid="3" class="cp_con">
+<ul class="clearfix">
+{dede:arclist typeid='4' titlelen='30' row='6' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank"
+
+class="red">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+
+$(function () {
+
+//1.\定义变量
+
+var $pcl = $(".cp_top a");
+
+var $pcn = $(".cp_con");
+
+
+
+//2.\控制内容显示和隐藏
+
+$pcn.eq(0).show().siblings(".cp_con").hide();
+
+
+
+//3.\鼠标触发事件
+
+$pcl.mouseover(function () {
+
+//3.1\获取当前Sid
+
+var _sid = $(this).attr("sid");
+
+
+
+//3.2\控制选中和未选中
+
+$(this).addClass("cur").siblings().removeClass("cur");
+
+
+
+//3.3\根据Sid显示和隐藏内容
+
+$(".cp_con[sid='" + _sid + "']").show().siblings(".cp_con").hide();
+
+});
+
+});
+
+</script> 
+
+<!--领导办公家具$$董事长办公家具$$总经理办公家具$$职员办公家具--> 
+
+</div>
+
+<!--定制方案中心-->
+
+<div class="dz">
+<h3> {dede:type typeid='8'}<a href="[field:typelink/]" title="定制方案中心" target="_blank">定制方案中心</a>{/dede:type}
+<span>Custom solution center</span> </h3>
+<ul class="tdz clearfix">
+{dede:type typeid='37'}
+<li sid="0001,0033,0034" class="cur"><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:type}     
+{dede:type typeid='38'}
+<li sid="0001,0033,0035" class=""><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:type} 
+
+
+{dede:type typeid='39'}
+<li sid="0001,0033,0036" class=""><a href="[field:typelink/]">[field:typename/]</a></li>
+{/dede:type}
+</ul>
+<ul sid="0001,0033,0034" class="dz-con clearfix">
+{dede:arclist typeid='37' titlelen='30' row='4' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+<ul sid="0001,0033,0035" class="dz-con clearfix">
+{dede:arclist typeid='38' titlelen='30' row='4' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+<ul sid="0001,0033,0036" class="dz-con clearfix">
+{dede:arclist typeid='39' titlelen='30' row='4' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</div>
+<script type="text/javascript">
+
+$(function () {
+
+//1.\定义变量
+
+var $pcl = $(".tdz li");
+
+var $pcn = $(".dz-con");
+
+
+
+//2.\控制内容显示和隐藏
+
+$pcn.eq(0).show().siblings(".dz-con").hide();
+
+
+
+//3.\鼠标触发事件
+
+$pcl.mouseover(function () {
+
+//3.1\获取当前Sid
+
+var _sid = $(this).attr("sid");
+
+
+
+//3.2\控制选中和未选中
+
+$(this).addClass("cur").siblings().removeClass("cur");
+
+
+
+//3.3\根据Sid显示和隐藏内容
+
+$(".dz-con[sid='" + _sid + "']").show().siblings(".dz-con").hide();
+
+});
+
+});
+
+</script> 
+
+<!--定制方案中心--> 
+
+<!--优势-->
+
+<div class="ys">
+<h3> <a href="/" title="打造整体高端办公环境" target="_blank"> <img class="lazyimg" src="{dede:global.cfg_templets_skin/}/images/grey.gif" _src="{dede:global.cfg_templets_skin/}/images/tys.gif"
+
+alt="打造整体高端办公环境" title="打造整体高端办公环境" /></a></h3>
+<ul>
+<li class="ys-a"><span>16年行业经验 <b>500强办公家具首选品牌</b></span>
+<p> 政府部门<b>定点采购</b></p>
+<p> 大中型企业<b>常年合作</b></p>
+<p> 多次被家具行业评为<b>“优秀厂商”</b></p>
+<em><a href="/" title="查看详情" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/btn1.gif" alt="查看详情" title="查看详情" /></a>
+ <a  href="http://wpa.qq.com/msgrd?V=3&uin={dede:global.cfg_qq/}&Site=QQ客服&Menu=yes" target="_blank" 
+title="立即咨询"> <img src="{dede:global.cfg_templets_skin/}/images/btn2.gif" alt="立即咨询" title="立即咨询" /></a></em> </li>
+<li class="ys-b"><span>极致环保<b>和异味、有害物质说拜拜</b></span>
+<p> 源头精选精品——<b>原材料环保监测</b></p>
+<p> 过程杜绝污染——<b>德国工艺防止传统晾晒过程中的污染</b></p>
+<p> 成品任意抽查——<b>自我进行环保测试之后接受客户任意抽查，满意再付款</b></p>
+<em><a href="/" title="查看详情" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/btn3.gif" alt="查看详情" title="查看详情" /></a>
+ <a  href="http://wpa.qq.com/msgrd?V=3&uin={dede:global.cfg_qq/}&Site=QQ客服&Menu=yes" target="_blank" 
+
+title="立即咨询"> <img src="{dede:global.cfg_templets_skin/}/images/btn4.gif" alt="立即咨询" title="立即咨询" /></a></em> </li>
+<li class="ys-c"><span>交货迅速，即刻投入办公<b>创造价值不用等</b></span>
+<p> 资深员工<b>4000余人</b>，占地面积<b>40万平方米</b>,</p>
+<p> 业内独家引进先进设备，<b>100万订单只需15个工作日</b></p>
+<p> 专业物流配送，快速安装完成</p>
+<em><a href="/" title="查看详情" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/btn3.gif" alt="查看详情" title="查看详情" /></a>
+ <a  href="http://wpa.qq.com/msgrd?V=3&uin={dede:global.cfg_qq/}&Site=QQ客服&Menu=yes" target="_blank" 
+
+title="立即咨询"> <img src="{dede:global.cfg_templets_skin/}/images/btn4.gif" alt="立即咨询" title="立即咨询" /></a></em> </li>
+<li class="ys-d"><span>售后保障长达五年 <b>一次购买终身无忧</b></span>
+<p> <b>按月回访</b>，认真听取您的每一个建议</p>
+<p> <b>急速响应</b>，快速解决您的每一个问题</p>
+<p> <b>免费为您二次“搬家”提供技术服务</b></p>
+<em><a href="/" title="查看详情" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/btn3.gif" alt="查看详情" title="查看详情" /></a>
+ <a  href="http://wpa.qq.com/msgrd?V=3&uin={dede:global.cfg_qq/}&Site=QQ客服&Menu=yes" target="_blank" 
+
+title="立即咨询"> <img src="{dede:global.cfg_templets_skin/}/images/btn4.gif" alt="立即咨询" title="立即咨询" /></a></em> </li>
+</ul>
+</div>
+
+<!--优势--> 
+
+<!--高端办公家具案例-->
+
+<div class="fa" id="index_gaoduans">
+<h3 class="tit">{dede:type typeid='40'} <em><a href="[field:typelink/]" title="家具案例中心" target="_blank">家具案例中心</a><span>Solutions
+
+center</span></em><b><a href="[field:typelink/]" title="家具案例中心">+
+
+more</a></b>{/dede:type}</h3>
+<ul class="fa-top clearfix">
+<li id="chk0" onmouseover="ShowCheckNew(this);"> {dede:type typeid='41'} <a href="[field:typelink/]"
+
+target="_blank" title="[field:typename/]"> [field:typename/]</a> {/dede:type} </li>
+<li id="chk1" onmouseover="ShowCheckNew(this);"> {dede:type typeid='42'} <a href="[field:typelink/]"
+
+target="_blank" title="[field:typename/]"> [field:typename/]</a> {/dede:type}</li>
+<li id="chk2" onmouseover="ShowCheckNew(this);"> {dede:type typeid='43'} <a href="[field:typelink/]"
+
+target="_blank" title="[field:typename/]"> [field:typename/]</a> {/dede:type}</li>
+<li id="chk3" onmouseover="ShowCheckNew(this);"> {dede:type typeid='44'} <a href="[field:typelink/]"
+
+target="_blank" title="[field:typename/]"> [field:typename/]</a> {/dede:type}</li>
+<li>{dede:type typeid='40'}<a href="[field:typelink/]" title="了解更多">了解更多</a>{/dede:type}</li>
+</ul>
+<div class="sample_cont" style="display: none;" id="shk0">
+<dl class="clearfix">
+{dede:arclist typeid='41' titlelen='30' row='1' flag='c'}
+<dt><a target="_blank" href="[field:arcurl/]"
+
+title="[field:title/]"> <img class="classname" src="[field:litpic/]"
+
+alt="[field:title/]" title="[field:title/]" /></a></dt>
+{/dede:arclist}
+<dd>
+<ul class="clearfix">
+{dede:arclist typeid='41' titlelen='30' row='4' noflag='c'}
+<li><a href='[field:arcurl/]'><img src='[field:litpic/]' alt='[field:title/]' title='[field:title/]' /></a><span><a href='[field:arcurl/]'>[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</dd>
+</dl>
+</div>
+<div class="sample_cont" style="display: none;" id="shk1">
+<dl class="clearfix">
+{dede:arclist typeid='42' titlelen='30' row='1' flag='c'}
+<dt><a target="_blank" href="[field:arcurl/]"
+
+title="[field:title/]"> <img class="classname" src="[field:litpic/]"
+
+alt="[field:title/]" title="[field:title/]" /></a></dt>
+{/dede:arclist}
+<dd>
+<ul class="clearfix">
+{dede:arclist typeid='42' titlelen='30' row='4' noflag='c'}
+<li><a href='[field:arcurl/]'><img src='[field:litpic/]' alt='[field:title/]' title='[field:title/]' /></a><span><a href='[field:arcurl/]'>[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</dd>
+</dl>
+</div>
+<div class="sample_cont" style="display: none;" id="shk2">
+<dl class="clearfix">
+{dede:arclist typeid='43' titlelen='30' row='1' flag='c'}
+<dt><a target="_blank" href="[field:arcurl/]"
+
+title="[field:title/]"> <img class="classname" src="[field:litpic/]"
+
+alt="[field:title/]" title="[field:title/]" /></a></dt>
+{/dede:arclist}
+<dd>
+<ul class="clearfix">
+{dede:arclist typeid='43' titlelen='30' row='4' noflag='c'}
+<li><a href='[field:arcurl/]'><img src='[field:litpic/]' alt='[field:title/]' title='[field:title/]' /></a><span><a href='[field:arcurl/]'>[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</dd>
+</dl>
+</div>
+<div class="sample_cont" style="display: none;" id="shk3">
+<dl class="clearfix">
+{dede:arclist typeid='44' titlelen='30' row='1' flag='c'}
+<dt><a target="_blank" href="[field:arcurl/]"
+
+title="[field:title/]"> <img class="classname" src="[field:litpic/]"
+
+alt="[field:title/]" title="[field:title/]" /></a></dt>
+{/dede:arclist}
+<dd>
+<ul class="clearfix">
+{dede:arclist typeid='44' titlelen='30' row='4' noflag='c'}
+<li><a href='[field:arcurl/]'><img src='[field:litpic/]' alt='[field:title/]' title='[field:title/]' /></a><span><a href='[field:arcurl/]'>[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+<script type="text/javascript">
+
+function ShowCheckNew(src) {
+
+$(src).parent().children().removeClass("cur");
+
+$(src).addClass("cur");
+
+var Index = $(src).attr("id");
+
+Index = Index.substring(3, Index.length);
+
+var ShowIndex = "#shk" + Index
+
+$(src).parent().parent().children(".sample_cont").hide();
+
+$(src).parent().parent().find(ShowIndex).show();
+
+
+
+
+
+var ShowIndex1 = "#shkk" + Index
+
+$(src).parent().parent().children(".fr").hide();
+
+$(src).parent().parent().find(ShowIndex1).show();
+
+
+
+}
+
+var CheckIndex = "0";
+
+var SwichID = "#index_gaoduans";
+
+
+
+$(SwichID).find("#chk" + CheckIndex).addClass("cur");
+
+$(SwichID).find("#shk" + CheckIndex).show();
+
+$(SwichID).find("#shkk" + CheckIndex).show();
+
+
+
+</script> 
+
+<!--高端办公家具案例--> 
+
+<!--广告01-->
+
+<div class="pic"> 
+<a href="/bgjj/" title="一流办公家具，打造一流办公环境"><img src="{dede:global.cfg_templets_skin/}/images/20140624100654_90714.jpg" title="一流办公家具，打造一流办公环境" alt="一流办公家具，打造一流办公环境" /></a>
+<a  href="http://wpa.qq.com/msgrd?V=3&uin={dede:global.cfg_qq/}&Site=QQ客服&Menu=yes" target="_blank"  title="我要咨询" class="btn01">我要咨询</a>
+<p> 订购咨询：<b>{dede:global.cfg_tel/}</b></p>
+</div>
+
+<!--广告01-->
+
+<div class="ab clearfix">
+<div class="content"> 
+
+<!--关于-->
+
+<div class="ab-l">
+<h3 class="clearfix"> <em><a href="/gybj/gsjj/" title="关于" target="_blank"> 关于</a>About the green river </em><b><a href="/gybj/gsjj/"
+
+title="more" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/more2.gif" alt="more" title="more" /></a></b> </h3>
+<dl class="clearfix">
+<dt><a href="/gybj/gsjj/" title="上海家具有限公司" target="_blank">
+<img src="{dede:global.cfg_templets_skin/}/images/20140626094723_81045.jpg" title="上海家具有限公司" alt="上海家具有限公司" /></a></dt>
+<dd> {dede:sql sql="SELECT content FROM dede_arctype where id=53" }[field:content function="Html2text(cn_substr(@me,900))"/]{/dede:sql}... </dd>
+
+</dl>
+</div>
+
+<!--关于--> 
+
+<!--荣誉认证-->
+
+<div class="ry">
+<h3 class="clearfix"> <em><a href="/zzry/ry/" title="荣誉认证" target="_blank">荣誉认证</a> certificate</em> <b><a href="/zzry/ry/" title="more" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/more2.gif" alt="more" title="more" /></a></b> </h3>
+<div class="list-con clearfix">
+<div id="Left_ding2" class="list-con-a"> <img src="{dede:global.cfg_templets_skin/}/images/left02.gif" alt="上一页" title="上一页" /></div>
+<div id="ISL_Cont_1d2" class="list-con-b clearfix"> {dede:arclist typeid='45' titlelen='30' row='20' }
+<p class="fl"> <a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img class="lazyimg" src="{dede:global.cfg_templets_skin/}/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></p>
+{/dede:arclist} </div>
+<div id="Right_ding2" class="list-con-c"> <img src="{dede:global.cfg_templets_skin/}/images/right02.gif" alt="下一页" title="下一页" /></div>
+</div>
+</div>
+<script language="javascript" type="text/javascript">
+
+var scrollPic_02 = new ScrollPicleft();
+
+scrollPic_02.scrollContId = "ISL_Cont_1d2"; // 内容容器ID""
+
+scrollPic_02.arrLeftId = "Left_ding2"; //左箭头ID
+
+scrollPic_02.arrRightId = "Right_ding2"; //右箭头ID
+
+scrollPic_02.frameWidth = 126; //显示框宽度
+
+scrollPic_02.pageWidth = 126; //翻页宽度
+
+scrollPic_02.speed = 10; //移动速度(单位毫秒，越小越快)
+
+scrollPic_02.space = 10; //每次移动像素(单位px，越大越快)
+
+scrollPic_02.autoPlay = true; //自动播放
+
+scrollPic_02.autoPlayTime = 3; //自动播放间隔时间(秒)
+
+scrollPic_02.initialize(); //初始化                                       
+
+</script> 
+
+<!--荣誉认证--> 
+
+</div>
+</div>
+
+<!--生产实力展示$$办公展示厅$$办公员工展示-->
+
+<div class="zs">
+<div class="tzs">
+<ul class="clearfix">
+<li sid="0001,0037,0038" class="cur"> {dede:type typeid='49'} <a href="[field:typelink/]">[field:typename/]</a> {/dede:type} </li>
+<li sid="0001,0037,0039" class=""> {dede:type typeid='50'} <a href="[field:typelink/]">[field:typename/]</a> {/dede:type}</li>
+<li sid="0001,0037,0040" class=""> {dede:type typeid='51'} <a href="[field:typelink/]">[field:typename/]</a> {/dede:type}</li>
+</ul>
+<b><a href="/" title="more" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/more3.gif" alt="more" title="more" /></a></b> </div>
+<div sid="0001,0037,0038" class="list-con clearfix">
+<div id="NewsLeft_ding0" class="list-con-a"> <img src="{dede:global.cfg_templets_skin/}/images/left02.gif" alt="上一页" title="上一页" /></div>
+<ul id="News_Cont_0" class="list-con-b clearfix">
+{dede:arclist typeid='49' titlelen='30' row='80' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a> <span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+<div id="NewsRight_ding0" class="list-con-c"> <img src="{dede:global.cfg_templets_skin/}/images/right02.gif" alt="下一页" title="下一页" /></div>
+</div>
+<script language="javascript" type="text/javascript">
+
+var scrollPics_0 = new ScrollPicleft();
+
+scrollPics_0.scrollContId = "News_Cont_0"; // 内容容器ID""
+
+scrollPics_0.arrLeftId = "NewsLeft_ding0"; //左箭头ID
+
+scrollPics_0.arrRightId = "NewsRight_ding0"; //右箭头ID
+
+scrollPics_0.frameWidth = 864; //显示框宽度
+
+scrollPics_0.pageWidth = 864; //翻页宽度
+
+scrollPics_0.speed = 10; //移动速度(单位毫秒，越小越快)
+
+scrollPics_0.space = 10; //每次移动像素(单位px，越大越快)
+
+scrollPics_0.autoPlay = true; //自动播放
+
+scrollPics_0.autoPlayTime = 3; //自动播放间隔时间(秒)
+
+scrollPics_0.initialize(); //初始化
+
+</script>
+<div sid="0001,0037,0039" class="list-con clearfix">
+<div id="NewsLeft_ding1" class="list-con-a"> <img src="{dede:global.cfg_templets_skin/}/images/left02.gif" alt="上一页" title="上一页" /></div>
+<ul id="News_Cont_1" class="list-con-b clearfix">
+{dede:arclist typeid='50' titlelen='30' row='80' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a> <span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+<div id="NewsRight_ding1" class="list-con-c"> <img src="{dede:global.cfg_templets_skin/}/images/right02.gif" alt="下一页" title="下一页" /></div>
+</div>
+<script language="javascript" type="text/javascript">
+
+var scrollPics_1 = new ScrollPicleft();
+
+scrollPics_1.scrollContId = "News_Cont_1"; // 内容容器ID""
+
+scrollPics_1.arrLeftId = "NewsLeft_ding1"; //左箭头ID
+
+scrollPics_1.arrRightId = "NewsRight_ding1"; //右箭头ID
+
+scrollPics_1.frameWidth = 864; //显示框宽度
+
+scrollPics_1.pageWidth = 864; //翻页宽度
+
+scrollPics_1.speed = 10; //移动速度(单位毫秒，越小越快)
+
+scrollPics_1.space = 10; //每次移动像素(单位px，越大越快)
+
+scrollPics_1.autoPlay = true; //自动播放
+
+scrollPics_1.autoPlayTime = 3; //自动播放间隔时间(秒)
+
+scrollPics_1.initialize(); //初始化
+
+</script>
+<div sid="0001,0037,0040" class="list-con clearfix">
+<div id="NewsLeft_ding2" class="list-con-a"> <img src="{dede:global.cfg_templets_skin/}/images/left02.gif" alt="上一页" title="上一页" /></div>
+<ul id="News_Cont_2" class="list-con-b clearfix">
+{dede:arclist typeid='51' titlelen='30' row='8' }
+<li><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a> <span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></li>
+{/dede:arclist}
+</ul>
+<div id="NewsRight_ding2" class="list-con-c"> <img src="{dede:global.cfg_templets_skin/}/images/right02.gif" alt="下一页" title="下一页" /></div>
+</div>
+<script language="javascript" type="text/javascript">
+
+var scrollPics_2 = new ScrollPicleft();
+
+scrollPics_2.scrollContId = "News_Cont_2"; // 内容容器ID""
+
+scrollPics_2.arrLeftId = "NewsLeft_ding2"; //左箭头ID
+
+scrollPics_2.arrRightId = "NewsRight_ding2"; //右箭头ID
+
+scrollPics_2.frameWidth = 864; //显示框宽度
+
+scrollPics_2.pageWidth = 864; //翻页宽度
+
+scrollPics_2.speed = 10; //移动速度(单位毫秒，越小越快)
+
+scrollPics_2.space = 10; //每次移动像素(单位px，越大越快)
+
+scrollPics_2.autoPlay = true; //自动播放
+
+scrollPics_2.autoPlayTime = 3; //自动播放间隔时间(秒)
+
+scrollPics_2.initialize(); //初始化
+
+</script> 
+</div>
+<script type="text/javascript">
+
+$(function () {
+
+//1.\定义变量
+
+var $pcl = $(".tzs li");
+
+var $pcn = $(".zs .list-con");
+
+
+
+//2.\控制内容显示和隐藏
+
+$pcn.eq(0).show().siblings(".list-con").hide();
+
+
+
+//3.\鼠标触发事件
+
+$pcl.mouseover(function () {
+
+//3.1\获取当前Sid
+
+var _sid = $(this).attr("sid");
+
+
+
+//3.2\控制选中和未选中
+
+$(this).addClass("cur").siblings().removeClass("cur");
+
+
+
+//3.3\根据Sid显示和隐藏内容
+
+$(".zs .list-con[sid='" + _sid + "']").show().siblings(".list-con").hide();
+
+});
+
+});
+
+</script> 
+
+<!--生产实力展示$$办公展示厅$$办公员工展示--> 
+
+<!--客户见证-->
+
+<div class="jz">
+<h3 class="clearfix"> <em><a href="/khjz/" title="客户见证" target="_blank">客户见证</a></em> <b><a href="/khjz/" title="more" target="_blank"><img src="{dede:global.cfg_templets_skin/}/images/more2.gif" alt="more" title="more" /></a></b> </h3>
+<div class="jz-con clearfix"> {dede:arclist typeid='7' titlelen='30' row='4' }
+<dl class="clearfix">
+<dt><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a></dt>
+<dd>
+<h6><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h6>
+<p>[field:description function="cn_substr(@me,250)"/]...</p>
+<span><a href="[field:arcurl/]" title="查看详情" target="_blank"><img src="/templets/web/images/btn6.gif" alt="查看详情" title="查看详情" /></a></span> </dd>
+</dl>
+{/dede:arclist} </div>
+</div>
+
+<!--客户见证--> 
+
+<!--广告02-->
+
+<div class="pic"> <a href="/bgjj/" title="政府定点合作 大企业专属品牌"><img src="{dede:global.cfg_templets_skin/}/images/20140624111020_63438.jpg" title="政府定点合作 大企业专属品牌" alt="政府定点合作 大企业专属品牌" /></a> <a  href="" target="_blank"  title="我要咨询" class="btn01">我要咨询</a>
+<p> 订购咨询：<b>{dede:global.cfg_tel/}</b></p>
+</div>
+
+<!--广告02-->
+
+<div class="dt clearfix"> 
+
+<!--动态$$行业资讯-->
+
+<div class="dt-l">
+<h3 class="clearfix"> 
+<em>
+<a href="/zx/gsxw/" id="hydt" title="动态" target="_blank" class="cur">动态</a>
+<a href="/zx/hyxw/" id="jyxw" title="行业资讯" target="_blank">行业资讯</a> </em>
+<b><a id="info_more" href="/zx/" title="more" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/more.gif" alt="more" title="more" /></a></b> </h3>
+<div id="info1"> {dede:arclist typeid='46' titlelen='45' row='1' flag='c' }
+<dl class="clearfix">
+<dt><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a></dt>
+<dd>
+<h6> <a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h6>
+<p> [field:description function="cn_substr(@me,150)"/]......</p>
+</dd>
+</dl>
+{/dede:arclist}
+<ul class="clearfix">
+{dede:arclist typeid='46' titlelen='45' row='4' noflag='c' }
+<li><span>[[field:pubdate function="MyDate('Y-m-d',@me)"/]]</span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+<div id="info2" style="display:none;"> {dede:arclist typeid='47' titlelen='45' row='1' flag='c' }
+<dl class="clearfix">
+<dt><a href="[field:arcurl/]" title="[field:title/]" target="_blank"> <img class="lazyimg" src="/templets/web/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a></dt>
+<dd>
+<h6> <a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h6>
+<p> [field:description function="cn_substr(@me,150)"/]......</p>
+</dd>
+</dl>
+{/dede:arclist}
+<ul class="clearfix">
+{dede:arclist typeid='47' titlelen='45' row='4' noflag='c' }
+<li><span>[[field:pubdate function="MyDate('Y-m-d',@me)"/]]</span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></li>
+{/dede:arclist}
+</ul>
+</div>
+</div>
+<script type="text/javascript">
+
+$(function () {
+
+var url1 = "/";
+
+var url2 = "/";
+
+var hydt = $("#hydt");
+
+var jyxw = $("#jyxw");
+
+var info1 = $("#info1");
+
+var info2 = $("#info2");
+
+var _more = $("#info_more");
+
+
+
+hydt.mousemove(function () {
+
+info1.show();
+
+info2.hide();
+
+_more.attr("href", url1);
+
+hydt.removeClass().addClass("cur");
+
+jyxw.removeClass();
+
+});
+
+
+
+jyxw.mousemove(function () {
+
+info2.show();
+
+info1.hide();
+
+_more.attr("href", url2);
+
+jyxw.removeClass().addClass("cur");
+
+hydt.removeClass();
+
+});
+
+});
+
+</script> 
+
+<!--动态$$行业资讯--> 
+
+<!--常见问题解答-->
+
+<div class="wd">
+<h3 class="clearfix"> <em><a href="/zx/wt/" title="常见问题解答" target="_blank">常见问题解答</a></em> <b><a href="/zx/wt/" title="more" target="_blank"> <img src="{dede:global.cfg_templets_skin/}/images/more.gif" alt="more" title="more" /></a></b> </h3>
+<div id="ulOrderAnns"> {dede:arclist typeid='52' titlelen='30' row='20' }
+<dl>
+<dt><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></dt>
+<dd>导读：[field:description function="cn_substr(@me,120)"/]...</dd>
+</dl>
+{/dede:arclist} </div>
+</div>
+<script type="text/javascript">
+
+new Marquee("ulOrderAnns", 0, 1, 355, 342, 40, 0, 1000, 22);
+
+</script> 
+
+<!--常见问题解答--> 
+
+</div>
+
+<!--友情链接-->
+
+<div class="link clearfix">
+<div class="link-con">
+<h3 class="clearfix"><em><a href="/" title="友情链接" target="_blank">友情链接</a>/ links</em> </h3>
+<p class="clearfix"> {dede:flink type='text' titlelen="50" row="30"} <span>[field:link /]</span> {/dede:flink} <span><a href="http://www.xunmoban.com" target="_blank">模板王</a> </span></p>
+</div>
+</div>
+
+<!--友情链接--> 
+
+</div>
+
+<!--主内容结束--> 
+
+<!--低部开始--> 
+
+{dede:include filename="footer.htm"/} 
+
+<!-- 返回顶部 --> 
+
+<script src="{dede:global.cfg_templets_skin/}/style/rollup.min.js" type="text/javascript"></script> 
+
+<!-- Baidu Button BEGIN 百度分享开始 --> 
+
+<!-- Baidu Button END 百度分享结束 --> 
+
+<script src="{dede:global.cfg_templets_skin/}/style/jquery.lazyload.min.js" type="text/javascript"></script>
+</body>
+</html>

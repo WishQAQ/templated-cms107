@@ -1,0 +1,1 @@
+<h4 class='erji'><a class="ershow" target="_blank" title='{dede:field name='typename'/}' href="{dede:field name='typeurl'/}" >{dede:field name='typename'/}</a></h4>

@@ -1,0 +1,1 @@
+<a href="[field:typelink/]" >按类型分类</a>

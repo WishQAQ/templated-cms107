@@ -1,0 +1,195 @@
+ 
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+
+
+
+
+
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script></head>
+
+<body>
+
+    <!--Header:Start-->
+
+    
+
+<!--头部开始-->
+{dede:include filename="head2.htm"/}
+
+
+
+
+
+<script type="text/javascript">
+
+    muneCur2();
+
+    initCommonHeader();
+
+    var MARK = "news";
+
+    if (MARK == "") { MARK = "index"; } else if (MARK != "index") { muneCur2(); }
+
+</script>
+
+
+
+    <!--Header:End-->
+
+    <!--Content:Start-->
+
+    <div class="content">
+
+        <div class="topadcs">
+
+            <a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}"><img src="{dede:global.cfg_templets_skin/}/images/20140625141432_81297.jpg" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" /></a>
+
+        </div>
+
+       
+
+        <div class="rightl">
+
+            <div class="righttop">
+
+            </div>
+
+            
+
+<div class="plc">
+   <span>{dede:field name='position'/}</span>
+
+	
+
+</div>
+
+
+
+
+
+            <div class="rightbot">
+
+            </div>
+
+            <div class="righttop">
+
+            </div>
+
+            <div class="right_main">
+
+                <div class="news_con">
+   
+
+                         {dede:list pagesize='10'  titlelen='30'}
+                        
+
+                            <dl class="dl_42">
+
+                                <dt><a title="[field:title/]" href="[field:arcurl/]" target="_blank">
+
+                                    <img src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a></dt>
+
+                                <dd>
+
+                                    <h5><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></h5>
+
+                                    <q>[field:title/]</q>
+
+                                    <p>[field:description function="cn_substr(@me,250)"/]...</p>
+
+                                </dd>
+
+                            </dl>
+
+                            <div class="clear">
+
+                            </div>
+
+                  {/dede:list}     
+
+                    
+
+                    
+
+                   
+
+                </div>
+
+<div class="fenye">
+      <ol>
+        {dede:pagelist listitem="info,index,end,pre,next,pageno"listsize=""/}
+      </ol>
+    </div>
+
+
+
+
+
+
+            </div>
+
+            <div class="rightbot">
+
+            </div>
+
+             
+
+            <div class="rightbot">
+
+            </div>
+
+        </div>
+
+        
+{dede:include filename="left.htm"/}
+
+
+        <script type="text/javascript">
+
+            var SID = "0001,0029,0031";
+
+            newsSelectCurrentPosition();
+
+        </script>
+
+        <div class="clear">
+
+        </div>
+
+    </div>
+
+    <!--Content:End-->
+
+    <!--Footer:Start-->
+
+    
+
+{dede:include filename="footer.htm"/}
+
+
+
+
+    <!--Footer:End-->
+
+</body>
+
+</html>
+

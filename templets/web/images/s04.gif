@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>NotFound</title>
+<link href="Css/reset.css" rel="stylesheet" type="text/css" />
+<link href="Skins/Default/Common.css" rel="stylesheet" type="text/css" />
+<link href="Skins/Default/Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body style=" background:none;">
+<!--Header:Start-->
+<div class="cart_header">
+	
+    <div class="cart_top">
+    	<div class="cart_nav"><a href="/">网站首页</a></div>
+    </div>
+</div>
+<!--Header:End-->
+<!--Content:Start-->
+<div class="cart_content">
+	<div class="cart_main">
+		<dl class="pri_dl">
+        	<dt><img src="Skins/Default/Img/ico_404.gif" alt="" title="" /></dt>
+            <dd><h4>[网站404页面缺失提示信息]</h4></dd>
+            <dd>很抱歉,您要访问的页面已经不存在或者已经被管理员移到其他的栏目， 同时请仔细检查一下浏览器地址栏，您要访问的地址是否正确。</dd>
+
+            <dd>以下是我们的快速网站频道导航：</dd>
+            <dd><a style="text-decoration:underline;" href="/">网站首页</a></dd>
+            <dd><a style="text-decoration:underline;" href="/product">产品中心</a></dd>
+            <dd><a style="text-decoration:underline;" href="/news">资讯中心</a></dd>
+            <dd><a style="text-decoration:underline;" href="/user">会员中心</a></dd>
+        </dl>
+        <div class="clear"></div>
+        <div class="dashed_line"></div>
+        <div style="text-align:center;"><input type="button" class="b13" value="首 页" onclick="location.href='\'" />
+            <input type="button" class="b14" value="返 回" onclick="history.back()" /></div>
+    </div>	
+</div>
+<!--Content:End-->
+<!--Footer:Start-->
+<div class="cart_footer">
+	<div class="cart_ft_nav">
+    	<a href="/helps/aboutus.html" title="关于我们">关于我们</a>|<a href="/job" title="诚征英才">诚征英才</a>|<a href="/helps/faq.html" title="常见问题">常见问题</a>|<a href="/help/leaveword.aspx" title="顾客留言">顾客留言</a>|<a href="" title="售后服务">售后服务</a>|<a href="" title="帮助中心">帮助中心</a>|<a href="/helps/contactus.html" title="联系我们">联系我们</a>|<a href="/sitemap.html" title="网站地图">网站地图</a>
+    </div>
+</div>
+<!--Footer:End-->
+</body>
+</html>

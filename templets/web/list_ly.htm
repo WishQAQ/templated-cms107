@@ -1,0 +1,332 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script></head>
+
+<body>
+
+<!--Header:Start-->
+
+
+
+<!--头部开始-->
+
+
+{dede:include filename="head2.htm"/}
+
+
+
+
+<script type="text/javascript">
+
+muneCur2();
+
+initCommonHeader();
+
+var MARK = "help";
+
+if (MARK == "") { MARK = "index"; } else if (MARK != "index") { muneCur2(); }
+
+</script>
+
+
+
+<!--Header:End-->
+
+<!--Content:Start-->
+
+<div class="topadcs">
+
+<a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}"><img src="{dede:global.cfg_templets_skin/}/images/20140625141432_81297.jpg" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" /></a>
+
+</div>
+
+<div class="content">
+
+
+<div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div>
+
+
+</div>
+
+
+
+<div class="rightl">
+
+<div class="righttop">
+
+</div>
+
+
+
+<div class="plc">
+
+<span>{dede:field name='position'/}</span>
+
+
+
+</div>
+
+
+
+
+
+<div class="rightbot">
+
+</div>
+
+<div class="righttop">
+
+</div>
+
+<div class="right_main">
+
+<div class="help_tab">
+
+<div class="bitian">
+
+<div>
+
+<span class="red_x1">*</span>表示必填</div>
+
+<h4 class="cont_tit">
+
+请留下您的问题,我们将尽快与您联系！</h4>
+
+</div>
+
+
+
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="2" />
+<input type="hidden" name="do" value="2" />
+
+<!--OranPager:start
+Developed By Oran Day(oransite#gmail.com)
+Version:1.1.0.9
+Aug. 28, 2009
+All rights reserved.-->
+
+<!--OranPager:end-->
+
+
+<table class="tab_1" id="oran_table_1">
+
+
+
+<tr>
+
+<td class="tab_lt">
+
+<span class="red_x">*</span> 联系人：
+
+</td>
+
+<td>
+
+<input  name='lxr' id='lxr'  type="text"  size="35" maxlength="32" />
+
+<span id="RequiredFieldValidator3" class="error" style="color:Red;display:none;">请填写联系人</span>
+
+请填写您的姓名，方便我们联系您
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td class="tab_lt">
+
+手机号码：
+
+</td>
+
+<td>
+
+<input name='sj' id='sj' type="text"  size="35" maxlength="16" />
+
+<span id="RegularExpressionValidator5" class="error" style="color:Red;display:none;">手机号码格式错误</span>
+
+请填写您的手机号码
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="tab_lt">
+
+<span class="red_x">*</span> 电子邮件：
+
+</td>
+
+<td>
+
+<input name='yj' id='yj' type="text"  size="35" maxlength="128" />
+
+<span id="RequiredFieldValidator1" class="error" style="color:Red;display:none;">请填写电子邮箱地址</span>
+
+<span id="RegularExpressionValidator1" class="error" style="color:Red;display:none;">电子邮件格式错误</span>
+
+请填写您的电子邮件
+
+</td>
+
+</tr>
+
+<tr>
+
+<td class="tab_lt tab_bz">
+
+<span class="red_x">*</span>备注：
+
+</td>
+
+<td>
+
+<textarea name='bz' id='bz'   cols="80" rows="5" class="ks5"></textarea>
+
+<span id="RequiredFieldValidator5" class="error" style="color:Red;display:none;">请填写问题描述</span>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+</td>
+
+<td>
+
+请填写您的<span class="span_1">问题描述</span>，有您的支持，是我们不断前进的动力，<span class="span_1">感谢您的支持！</span>
+
+</td>
+
+</tr>
+
+<input type="hidden" name="dede_fields" value="lxr,text;sj,text;yj,text;bz,multitext" />
+<input type="hidden" name="dede_fieldshash" value="ad27ff4b78e4bb69f118eda0348404a2" />
+
+
+
+<tr>
+
+<td>
+
+</td>
+
+<td>
+
+<input type="submit" name="btnSubmit" value="提 交"  class="b17" />
+
+<input type="button" class="b18" value="重 填"  />
+
+</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="rightbot">
+
+</div>
+
+</div>
+
+
+
+{dede:include filename="left1.htm"/}
+
+
+</div>
+
+
+
+<script type="text/javascript">
+
+$("div.leftr *:contains('留言')").addClass("cur");
+
+</script>
+
+<div class="clear">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!--Content:End-->
+
+<!--Footer:Start-->
+
+
+{dede:include filename="footer.htm"/}
+
+
+<!-- 返回顶部 -->
+
+</body>
+
+</html>
+

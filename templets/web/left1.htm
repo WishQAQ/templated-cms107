@@ -1,0 +1,40 @@
+<div class="leftr">
+<div class="leib2">
+<div class="tit"> 栏目分类 <span>Classification</span></div>
+
+<div class="nr">
+{dede:channel}
+<h4 style="margin-bottom:10px;"><a title='[field:typename/]' href="[field:typelink/]" >[field:typename/]</a></h4>
+{/dede:channel}
+</div>
+
+</div>
+<script type="text/javascript">
+
+$(".sj").hide();
+
+$(".erji").hover(function () {
+
+$(this).next(".sj").toggle(200).siblings(".sj").hide(200);
+
+}).css("cursor", "pointer");
+
+</script> 
+<script type="text/javascript">
+
+productSelectCurrentPosition("0001,0005,0006");
+
+</script>
+<div class="leib3 mt10">
+<div class="tit">联系我们</div>
+<div class="nr"> <img src="{dede:global.cfg_templets_skin/}/images/leftlx.gif" >
+<h5 >{dede:global.cfg_mc/}</h5>
+<p><span>联系热线：</span>{dede:global.cfg_tel/}</p>
+<p><span>手机号码：</span>{dede:global.cfg_sj/}</p>
+<p><span>QQ号码：</span>{dede:global.cfg_qq/}</p>
+<p><span>邮箱：</span>{dede:global.cfg_yx/}</p>
+<p><span>公司地址：</span>{dede:global.cfg_dz/}</p>
+</div>
+</div>
+<div class="leftbot"> </div>
+</div>

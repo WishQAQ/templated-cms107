@@ -1,0 +1,1 @@
+<a sid="0" href="[field:typelink/]" title="[field:typename/]" target="_blank"  class="cur">[field:typename/]</a>|

@@ -1,0 +1,176 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field name='typename'/}-{dede:global.cfg_webname/}</title>
+
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+
+<meta name="description" content="{dede:global.cfg_description/}" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/resetcommon.css" rel="stylesheet" type="text/css" />
+
+<link href="{dede:global.cfg_templets_skin/}/style/Style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/style/NSW_JCIA.js"></script></head>
+
+<body>
+
+<!--Header:Start-->
+
+
+
+<!--头部开始-->
+
+
+{dede:include filename="head2.htm"/}
+
+
+
+
+
+
+
+
+<!--Header:End-->
+
+<!--Content:Start-->
+
+<div class="topadcs">
+
+<a href="{dede:field name='typeurl'/}" title="{dede:field name='typename'/}"><img src="{dede:global.cfg_templets_skin/}/images/20140625141432_81297.jpg" title="{dede:field name='typename'/}" alt="{dede:field name='typename'/}" /></a>
+
+</div>
+
+<div class="content">
+
+
+
+<div class="rightl">
+
+<div class="righttop">
+
+</div>
+
+
+
+<div class="plc">
+
+<span>{dede:field name='position'/}</span>
+
+
+
+</div>
+
+
+
+
+
+<div class="rightbot mb10">
+
+</div>
+
+<div class="righttop">
+
+</div>
+
+<div class="right_main">
+
+<div class="agent_con">
+
+
+
+<div class="age_li_about" id="showstate">
+
+
+
+</div>
+{dede:list pagesize='10'  titlelen='30'}
+<dl class="dl_2">
+
+<dt><a href="[field:arcurl/]" target="_blank"
+
+title="[field:title/]">
+
+<img src="[field:litpic/]"
+
+title="[field:title/]" alt="[field:title/]" /></a></dt>
+
+<dd>
+
+<a href="[field:arcurl/]" target="_blank" title="[field:title/]">
+
+[field:title/]</a></dd>
+
+</dl>
+
+
+
+
+
+
+
+
+{/dede:list}
+
+
+
+
+</div>
+
+</div>
+
+<div class="rightbot">
+
+</div>
+
+<div class="clear">
+
+</div>
+
+</div>
+
+
+
+
+{dede:include filename="left1.htm"/}
+<div class="leftbot">
+
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+var SID = "0001,0009,0011";
+
+helpSelectCurrentPosition(SID);
+
+</script>
+
+<div class="clear">
+
+</div>
+
+</div>
+
+<!--Content:End-->
+
+<!--Footer:Start-->
+
+
+
+
+{dede:include filename="footer.htm"/}
+<!-- 返回顶部 -->
+</body>
+
+</html>
+

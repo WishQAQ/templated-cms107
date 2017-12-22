@@ -1,0 +1,1 @@
+<p class="fl"> <a href="[field:arcurl/]" title="[field:title/]" target="_blank"><img class="lazyimg" src="{dede:global.cfg_templets_skin/}/images/grey.gif" _src="[field:litpic/]" alt="[field:title/]" title="[field:title/]" /></a><span><a href="[field:arcurl/]" title="[field:title/]" target="_blank">[field:title/]</a></span></p>
